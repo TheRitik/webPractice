@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-image: url("wallpaperflare.com_wallpaper\ \(8\).jpg");
+            background-size: cover;
+        }
+        .square {
+            width: 400px; /* Increase the size of the square */
+            height: 400px;
+            margin: 0 auto;
+            border: 5px solid black; /* Increase border thickness */
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5); /* Change this to match your background color */
+            color: white; /* Change text color to white for visibility */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            right: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 25px; /* Add this line to make corners rounded */
+        }
+        .square input {
+            margin-bottom: 10px; /* Increase the gap between input fields */
+            width: 95%;
+            height: 35px; /* Increase the height of input fields */
+            border-radius: 5px; /* Add this line to round the corners */
+            color: lightgrey; /* Change this to any light color you prefer */
+            padding-left: 10px; 
+            /* Add this line to move the placeholder text slightly to the right */
+        }
+        .square a {
+            display: block;
+            text-align: center;
+            margin-top: 5px; /* Add some space above the link */
+        }
+        .square button {
+            background-color: rgb(11, 103, 11); /* Change the button color to light green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: block; /* Change this to block to make the button centered */
+            font-size: 16px;
+            margin: 4px auto; /* Change this to auto to make the button centered */
+            cursor: pointer;
+            border-radius: 25px; /* Add this line to make corners rounded */
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            text-underline-offset: true;
+        }
+        #myLink {
+            color: white; /* Change the color to red */
+            text-decoration: none;
+            word-spacing: normal;
+            animation: backwards;
+        }
+        #myLink:hover {
+            color: yellow; /* Change the color to blue when hovered over */
+            animation: blink 0.8s infinite;
+        }
+        #myDiv {
+            width: 200px;
+            height: 10px;
+            text-decoration: solid;
+            font-size: 20px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="square">
+        <div id = "myDiv">Create New Account </div>
+        <form>
+            <input type="text" id="username" name="username" placeholder="Username"><br>
+            <input type="text" id="fullName" name="fullName" placeholder="Full Name"><br>
+            <input type="email" id="email" name="email" placeholder="Email"><br>
+            <input type="password" id="password" name="password" placeholder="Password"><br>
+            <button type="submit">Sign Up</button>   
+        </form>
+    </div>
+</body>
+<script>src="index.js"</script>
+</html>
